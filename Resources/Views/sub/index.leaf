@@ -1,0 +1,21 @@
+#extend("master"):
+    #export("title", "TITLE")
+    #export("body"):
+        <h1 class="text-xl mb-4">Available rooms</h1>
+
+        <form action="">
+            <input type="text" name="room_name" placeholder="Create a new room" id="room_name" class="border border-red-400 col-span-7 col-start-4 p-1 rounded-sm outline-none shadow-md">
+            <input type="submit" value="✚" class="col-span-1 bg-red-300 border border-red-400 rounded-sm shadow-md p-1 text-white">
+        </form>
+
+        <div class="cursor-pointer rounded-2xl shadow-lg p-4 mb-4 text-white bg-gradient-to-r to-green-400 from-blue-500">
+            <span class="text-lg">Bester chat room</span>
+            <span class="text-xs text-gray-200 ml-2">2 members online</span>
+        </div>
+
+        <div class="cursor-pointer rounded-2xl shadow-lg p-4 mb-4 text-white bg-gradient-to-r to-green-400 from-blue-500">
+            <span class="text-lg">blub</span>
+            <span class="text-xs text-gray-200 ml-2">234 members online</span>
+        </div>
+    #endexport
+#endextend

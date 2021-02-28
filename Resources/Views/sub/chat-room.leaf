@@ -1,0 +1,40 @@
+#extend("master"):
+    #export("title", "Home")
+    #export("body"):
+        <div class="grid grid-cols-4">
+            <span class="col-span-1 text-left"><a href="/">🔙</a></span>
+            <h1 class="text-xl col-span-3">Bester chat room</h1>
+        </div>
+        <div id="messages" class="p-4 h-3/4 overflow-scroll">
+            <div class="grid grid-cols-12 gap-2">
+                <span class="text-right text-sm text-gray-400 col-span-3">Patrick</span>
+                <div class="col-span-9">
+                    Hallo!
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 gap-2">
+                <span class="text-right text-sm text-gray-400 col-span-3">Judith</span>
+                <div class="col-span-9">
+                    Hey 😊
+                </div>
+            </div>
+        </div>
+
+        <form action="">
+            <div id="form" class="grid grid-cols-12 gap-2">
+                <input type="text"
+                    name="content"
+                    id="message"
+                    placeholder="Your message&#8230;"
+                    class="border border-red-400 col-span-7 col-start-4 p-1 rounded-sm outline-none shadow-md"
+                    >
+                <input type="submit"
+                    value="🚀"
+                    id="send"
+                    class="col-span-1 bg-red-300 border border-red-400 rounded-sm shadow-md"
+                    >
+            </div>
+        </form>
+    #endexport
+#endextend

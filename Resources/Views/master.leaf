@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Chat &ndash; #import("title")</title>
+        <script>
+            document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+        ':35729/livereload.js?snipver=1"></' + 'script>')
+        </script>
+        <link rel="stylesheet" href="/tailwind.css">
+    </head>
+    <body>
+        <div class="container mx-auto p-4">
+            #import("body")
+        </div>
+    </body>
+</html>
